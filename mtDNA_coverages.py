@@ -30,7 +30,7 @@ with open(argv[2]) as f2:
 with open(argv[3]) as f3:
     for line in f3:
         splitted = line.strip().split("\t")
-        contig,coverage = splitted[0],int(splitted[3])
+        contig,coverage = splitted[0],int(splitted[2])
         mtdna_dict[contig][2] += 1
         mtdna_dict[contig][3] += coverage
 
